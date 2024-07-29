@@ -1,19 +1,18 @@
-
 """
-Sheep LCA Module
+Swine LCA Module
 ------------------
 
-This module contains classes and methods for calculating the environmental impact of sheep farming, including energy requirements,
-emissions, and waste management. It covers various stages of sheep lifecycle and farm operations such as grazing, housing, manure management, 
+This module contains classes and methods for calculating the environmental impact of pig farming, including energy requirements,
+emissions, and waste management. It covers various stages of pig lifecycle and farm operations such as housing, manure management,
 and fertilization practices. The module aims to provide a comprehensive assessment tool for understanding and reducing the environmental 
-footprint associated with sheep production.
+footprint associated with pig production.
 
 The module includes detailed assessments of greenhouse gas emissions, eutrophication potential, air quality impacts, and 
 resource usage to support sustainable farming practices and decision-making. By integrating data from various sources and 
 applying region-specific (Ireland) emission factors, the module helps in evaluating the overall environmental performance of sheep farms.
 
 Key Features:
-- Calculation of energy consumption and efficiency in sheep farming.
+- Calculation of energy consumption and efficiency in pig farming.
 - Estimation of greenhouse gas emissions from enteric fermentation, manure management, and other farm activities.
 - Assessment of nutrient runoff and its impact on eutrophication.
 - Evaluation of ammonia emissions and their contribution to air quality issues.
