@@ -82,9 +82,6 @@ class EmissionCalculationTestCase(unittest.TestCase):
             self.baseline_index
         ] += self.eutrophication.total_manure_NH3_EP(past_animals[past_animals_loc]["animals"])
 
-        self.emissions_dict["soils"][
-            self.baseline_index
-        ] += self.eutrophication.total_grazing_soils_EP(past_animals[past_animals_loc]["animals"])
 
         self.emissions_dict["soils"][
             self.baseline_index
