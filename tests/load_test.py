@@ -2,7 +2,7 @@ import unittest
 import pandas as pd
 import os
 
-from cattle_lca.resource_manager.models import (
+from swine_lca.resource_manager.models import (
     Animal_Features,
     Grass,
     Concentrate,
@@ -13,15 +13,15 @@ from cattle_lca.resource_manager.models import (
 
 class DatasetLoadingTestCase(unittest.TestCase):
     def setUp(self):
-        self.data_dir = "./data"
+        self.data_dir = "./data_swine"
 
     def test_dataset_loading(self):
         # Test loading the datasets as pandas DataFrames
         animal_features_path = os.path.join(
-            self.data_dir, "animal_features_database.csv"
+            self.data_dir, "swine_animal_features_database.csv"
         )
         concentrate_path = os.path.join(self.data_dir, "concentrate_database.csv")
-        ef_path = os.path.join(self.data_dir, "emissions_factors_database.csv")
+        ef_path = os.path.join(self.data_dir, "swine_emissions_factors_database.csv")
         grass_path = os.path.join(self.data_dir, "grass_database.csv")
         upstream_path = os.path.join(self.data_dir, "upstream_database.csv")
 
@@ -45,7 +45,6 @@ class DatasetLoadingTestCase(unittest.TestCase):
         self.assertTrue(ef_class.is_loaded())
         self.assertTrue(grass_class.is_loaded())
         self.assertTrue(upstream_class.is_loaded())
-        
 
 
 if __name__ == "__main__":
